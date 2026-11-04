@@ -2,6 +2,7 @@
 
 import BottomNav from "@/components/BottomNav.vue";
 import TopNav from "@/components/TopNav.vue";
+import LeftNav from "@/components/LeftNav.vue";
 </script>
 
 <template>
@@ -33,16 +34,9 @@ import TopNav from "@/components/TopNav.vue";
 
       <div class="green-box">
         <aside class="left-side">
-          <nav class="left-nav">
-            <a href="about-us.html">About us</a>
-            <a href="#">Faculty &amp; staff</a>
-            <a href="#">Undergraduate students</a>
-            <a href="#">Graduate students</a>
-            <a href="#">Courses &amp; syllabi</a>
-            <a href="#">News &amp; announcements</a>
-            <a href="#">Friends &amp; alumni</a>
-            <a href="contact-us.html">Contact us</a>
-          </nav>
+
+          <left-nav/>
+
         </aside>
 
         <main>
@@ -161,23 +155,6 @@ div.container { /* Container div */
             display: block;
             float: left;
             width: 33%;
-
-            nav {
-              a {
-                display: block;
-                text-transform: uppercase;
-                font-size: 10px;
-                color: var(--black);
-                border-bottom: 2px solid var(--engDeptGreen);
-                text-decoration: none;
-                padding: 10px 0 10px 10px;
-
-                &:hover {
-                  background-color: var(--engDeptGreen);
-                  color: #fff;
-                }
-              }
-            }
           }
         }
 

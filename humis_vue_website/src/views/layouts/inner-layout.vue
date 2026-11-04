@@ -2,6 +2,7 @@
 
 import BottomNav from "@/components/BottomNav.vue";
 import TopNav from "@/components/TopNav.vue";
+import LeftNav from "@/components/LeftNav.vue";
 </script>
 
 <template>
@@ -17,16 +18,8 @@ import TopNav from "@/components/TopNav.vue";
 
     <section class="middle">
       <div class="left-side">
-        <nav class="left-nav">
-          <a href="about-us.html" class="active">About us</a>
-          <a href="#">Faculty &amp; staff</a>
-          <a href="#">Undergraduate students</a>
-          <a href="#">Graduate students</a>
-          <a href="#">Courses &amp; syllabi</a>
-          <a href="#">News &amp; announcements</a>
-          <a href="#">Friends &amp; alumni</a>
-          <a href="contact-us.html">Contact us</a>
-        </nav>
+
+        <left-nav/>
 
         <div class="login-links">
           <img src="@/assets/files/login-cis.gif" alt="Log into CIS"/>
@@ -119,48 +112,6 @@ section.container {
         }
       }
 
-      nav.minor {
-        display: flex;
-        justify-content: center;
-        font-size: 10px;
-        align-items: center;
-
-        a {
-          color: var(--black);
-          border-right: 1px solid black;
-          padding-right: 5px;
-          margin-right: 5px;
-          text-decoration: none;
-
-          &:hover {
-            text-decoration: underline;
-          }
-
-          img {
-            vertical-align: middle;
-          }
-
-          &:last-of-type {
-            border-right: none;
-          }
-
-          &.active {
-            text-decoration: underline;
-          }
-        }
-
-        &.top {
-          text-transform: uppercase;
-          margin-top: 5px;
-          order: -2;
-        }
-
-        &.bottom {
-          text-transform: lowercase;
-          margin-bottom: 5px;
-        }
-      }
-
       main {
         padding: 30px;
       }
@@ -175,7 +126,6 @@ section.container {
     font-size: 10px;
   }
 
-
   /* Tablet and up overrides */
   @media screen and (width >= 600px) {
     section.middle {
@@ -189,30 +139,6 @@ section.container {
         background-color: var(--grey-light);
         border-right: 2px solid var(--green-light);
         padding-bottom: 20px;
-
-        nav.left-nav {
-          margin: 20px 20px 0;
-
-          a {
-            display: block;
-            text-transform: uppercase;
-            font-size: 10px;
-            color: var(--black);
-            border-bottom: 2px solid var(--engDeptGreen);
-            text-decoration: none;
-            padding: 10px 0 10px 10px;
-
-            &:hover {
-              background-color: var(--engDeptGreen);
-              color: #fff;
-            }
-
-            &.active {
-              font-weight: bold;
-              font-size: 12px;
-            }
-          }
-        }
 
         div.login-links {
           display: flex;
