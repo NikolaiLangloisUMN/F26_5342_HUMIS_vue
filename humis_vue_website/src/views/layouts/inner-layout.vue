@@ -1,15 +1,16 @@
 <script setup>
 
 import BottomNav from "@/components/BottomNav.vue";
+import TopNav from "@/components/TopNav.vue";
 </script>
 
 <template>
   <section class="container">
 
     <header>
-      <a href="index.html">
+      <router-link :to="{ name: 'home' }">
         <img src="@/assets/files/historyHeader.gif" alt="HUMIS project"/>
-      </a>
+      </router-link>
 
       <img src="@/assets/files/histBooks01.jpg" alt="Books on a table"/>
     </header>
@@ -52,15 +53,7 @@ import BottomNav from "@/components/BottomNav.vue";
           </label>
         </nav>
 
-        <nav class="minor top">
-          <a href="#">Campus directory</a>
-          <a href="#">Department calendar</a>
-          <a href="contact-us.html">Contact us</a>
-
-          <a href="#">
-            <img src="@/assets/files/u_small.gif" alt="U of U Logo"/>
-          </a>
-        </nav>
+        <top-nav/>
 
         <main>
           <slot></slot>

@@ -6,53 +6,10 @@
   <nav class="bottom">
     <a href="#">Disclaimer</a>
     <a href="#">Text only</a>
-    <a href="#">Webmaster</a>
+    <a href="#">Email Wen</a>
   </nav>
 </template>
 
 <style scoped>
-nav {
-  text-align: center;
-  font-size: 10px;
-  text-transform: uppercase;
-
-  a {
-    color: var(--black);
-    border-right: 1px solid black;
-    padding-right: 5px;
-    margin-right: 5px;
-    text-decoration: none;
-
-    &:hover {
-      text-decoration: underline;
-    }
-
-    img {
-      vertical-align: middle;
-    }
-
-    &:last-of-type {
-      border-right: none;
-    }
-  }
-
-  &.drop-down-menu {
-    border: 1px solid black;
-    margin-top: 10px;
-
-    select {
-      width: 100%;
-    }
-  }
-
-  &.bottom {
-    text-transform: lowercase;
-  }
-
-  /* Tablet and up overrides */
-  @media screen and (width >= 600px) {
-    text-align: right; /* Override the mobile property */
-  }
-}
-
+@import "@/assets/top-and-bottom-navs.css";
 </style>
