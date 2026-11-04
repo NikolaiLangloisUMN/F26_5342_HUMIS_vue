@@ -1,5 +1,6 @@
 <script setup>
 
+import BottomNav from "@/components/BottomNav.vue";
 </script>
 
 <template>
@@ -65,11 +66,7 @@
           <slot></slot>
         </main>
 
-        <nav class="minor bottom">
-          <a href="#">Disclaimer</a>
-          <a href="#">Text only</a>
-          <a href="#">Webmaster</a>
-        </nav>
+        <bottom-nav/>
 
       </section>
     </section>

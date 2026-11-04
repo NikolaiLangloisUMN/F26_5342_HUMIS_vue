@@ -1,5 +1,6 @@
 <script setup>
 
+import BottomNav from "@/components/BottomNav.vue";
 </script>
 
 <template>
@@ -79,11 +80,8 @@
         <div style="clear: both;"></div>
       </div>
 
-      <nav class="bottom">
-        <a href="#">Disclaimer</a>
-        <a href="#">Text only</a>
-        <a href="#">Webmaster</a>
-      </nav>
+      <bottom-nav/>
+
     </section>
 
     <footer>
@@ -113,45 +111,6 @@ div.container { /* Container div */
     background-image: url('@/assets/files/uofu_medallion_rt.gif');
     background-repeat: no-repeat;
     background-position: bottom right;
-
-    > nav {
-      text-align: center;
-      font-size: 10px;
-      text-transform: uppercase;
-
-      a {
-        color: var(--black);
-        border-right: 1px solid black;
-        padding-right: 5px;
-        margin-right: 5px;
-        text-decoration: none;
-
-        &:hover {
-          text-decoration: underline;
-        }
-
-        img {
-          vertical-align: middle;
-        }
-
-        &:last-of-type {
-          border-right: none;
-        }
-      }
-
-      &.drop-down-menu {
-        border: 1px solid black;
-        margin-top: 10px;
-
-        select {
-          width: 100%;
-        }
-      }
-
-      &.bottom {
-        text-transform: lowercase;
-      }
-    }
   }
 
   div.green-box {
@@ -194,7 +153,6 @@ div.container { /* Container div */
     /* A breakpoint */
     section.middle {
       > nav { /* nav child */
-        text-align: right; /* Override the mobile property */
 
         &.drop-down-menu {
           display: none;
