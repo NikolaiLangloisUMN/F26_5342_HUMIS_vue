@@ -1,5 +1,5 @@
 <script setup>
-
+import {useRouter} from 'vue-router'
 </script>
 
 <template>
@@ -19,6 +19,13 @@
     <a href="#">Friends &amp; alumni</a>
 
     <router-link :to="{ name: 'contact-us' }">Contact us</router-link>
+
+
+    <router-link v-for="(route, index) in useRouter().options.routes"
+                 v-text="route.meta.prettyName"
+                 :to="{ name: route.name }"
+    />
+
   </nav>
 </template>
 

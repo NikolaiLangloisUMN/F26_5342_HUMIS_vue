@@ -11,16 +11,25 @@ const router = createRouter({
       path: '/',
       name: 'home',
       component: HumisHomepage,
+      meta: {
+        prettyName: 'Home page',
+      }
     },
     {
       path: '/about',
       name: 'about',
       component: AboutUs,
+      meta: {
+        prettyName: 'About Us',
+      }
     },
     {
       path: '/contact-us',
       name: 'contact-us',
       component: ContactUs,
+      meta: {
+        prettyName: 'Contact Us',
+      }
     }
   ],
 })
