@@ -10,10 +10,10 @@ import LeftNav from "@/components/LeftNav.vue";
 
     <header>
       <router-link :to="{ name: 'home' }">
-        <img src="@/assets/files/historyHeader.gif" alt="HUMIS project"/>
+        <img src="../../assets/files/historyHeader.gif" alt="HUMIS project"/>
       </router-link>
 
-      <img src="@/assets/files/histBooks01.jpg" alt="Books on a table"/>
+      <img src="../../assets/files/histBooks01.jpg" alt="Books on a table"/>
     </header>
 
     <section class="middle">
@@ -22,8 +22,8 @@ import LeftNav from "@/components/LeftNav.vue";
         <left-nav/>
 
         <div class="login-links">
-          <img src="@/assets/files/login-cis.gif" alt="Log into CIS"/>
-          <img src="@/assets/files/login-humis.gif" alt="Log into HUMIS"/>
+          <img src="../../assets/files/login-cis.gif" alt="Log into CIS"/>
+          <img src="../../assets/files/login-humis.gif" alt="Log into HUMIS"/>
         </div>
       </div>
 

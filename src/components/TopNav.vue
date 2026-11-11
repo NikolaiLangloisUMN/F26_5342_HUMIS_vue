@@ -13,7 +13,7 @@
     </router-link>
 
     <a href="#">
-      <img src="@/assets/files/u_small.gif" alt="U of U Logo"/>
+      <img src="../assets/files/u_small.gif" alt="U of U Logo"/>
     </a>
   </nav>
 </template>

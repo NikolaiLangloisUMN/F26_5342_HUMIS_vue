@@ -9,8 +9,8 @@ import LeftNav from "@/components/LeftNav.vue";
   <div class="container">
 
     <header>
-      <img src="@/assets/files/historyHome.gif" alt="U of U History Department logo"/>
-      <img src="@/assets/files/histHomepic.jpg" alt="Shelf of books"/>
+      <img src="../assets/files/historyHome.gif" alt="U of U History Department logo"/>
+      <img src="../assets/files/histHomepic.jpg" alt="Shelf of books"/>
     </header>
 
     <section class="middle">
@@ -40,7 +40,7 @@ import LeftNav from "@/components/LeftNav.vue";
         </aside>
 
         <main>
-          <img src="@/assets/files/women_w_pottery.jpg" alt="Women w pottery"/>
+          <img src="../assets/files/women_w_pottery.jpg" alt="Women w pottery"/>
 
           <p>The history of women in Mexico is a profound narrative of resilience, transformation, and leadership
             that spans from the pre-Columbian era to the modern day. In Mesoamerican civilizations like the Maya
