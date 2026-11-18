@@ -21,11 +21,17 @@ const props = defineProps({
 
 <style scoped>
 p.faculty-contact-card {
+  font-size: 0.75rem;
+
   span {
     display: block;
 
     &.name {
       font-weight: bold;
+    }
+
+    &.title {
+      font-style: italic;
     }
   }
 

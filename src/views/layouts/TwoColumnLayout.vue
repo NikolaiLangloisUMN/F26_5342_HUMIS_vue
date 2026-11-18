@@ -47,14 +47,14 @@ section.two-column-layout {
     border: 1px dashed green;
 
     &.left-side {
-      width: 25%;
+      width: 35%;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
     }
 
     &.right-side {
-      width: 75%;
+      width: 65%;
     }
   }
 }

@@ -1,5 +1,5 @@
 <script setup>
-import FacultyContactCard from "@/components/FacultyContactCard.vue";
+import FacultyContactCard from "@/views/faculty-and-staff/FacultyContactCard.vue";
 
 const ericH = { /* Javascript Object */
   fName: 'Eric',

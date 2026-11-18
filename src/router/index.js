@@ -3,7 +3,8 @@ import { createRouter, createWebHistory } from 'vue-router'
 import HumisHomepage from "@/views/HumisHomepage.vue";
 import AboutUs from '@/views/AboutUs.vue'
 import ContactUs from "@/views/ContactUs.vue";
-import FacultyAndStaff from "@/views/FacultyAndStaff.vue";
+import FacultyAndStaffLandingPage from "@/views/faculty-and-staff/FacultyAndStaffLandingPage.vue";
+import FacultyListing from "@/views/faculty-and-staff/FacultyListing.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -36,7 +37,15 @@ const router = createRouter({
     {
       path: '/faculty-and-staff',
       name: 'faculty-and-staff',
-      component: FacultyAndStaff,
+      component: FacultyAndStaffLandingPage,
+      /* These are this pages's (route's) child routes (or pages) */
+      children: [
+        {
+          path: 'faculty-listing',
+          name: 'faculty-listing',
+          component: FacultyListing,
+        }
+      ],
       meta: {
         prettyName: 'Faculty and Staff',
       }
