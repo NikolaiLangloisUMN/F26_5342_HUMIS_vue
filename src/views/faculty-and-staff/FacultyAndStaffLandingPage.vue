@@ -20,7 +20,6 @@ import FacultyNav from "@/views/faculty-and-staff/FacultyNav.vue";
       </template>
 
       <template #right-side>
-        This could be all the content for Mr. Basso
         <router-view/>
       </template>
     </two-column-layout>

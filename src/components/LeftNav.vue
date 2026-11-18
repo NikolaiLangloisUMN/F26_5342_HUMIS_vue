@@ -33,7 +33,7 @@ nav.left-nav {
       color: #fff;
     }
 
-    &.active {
+    &.router-link-active {
       font-weight: bold;
       font-size: 12px;
     }

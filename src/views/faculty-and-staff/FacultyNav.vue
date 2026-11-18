@@ -7,9 +7,13 @@
     <h4>Faculty &amp; Staff</h4>
 
     <div class="links">
-      <a href="#">New faculty</a>
-      <a href="#">Faculty listing</a>
-      <a href="#">Staff listing</a>
+
+      <router-link :to="{ name: 'new-faculty'}">New faculty</router-link>
+
+      <router-link :to="{ name: 'faculty-listing'}">Faculty listing</router-link>
+
+      <router-link :to="{ name: 'staff-listing'}">Staff listing</router-link>
+
     </div>
 
   </section>
@@ -30,6 +34,10 @@ section.faculty-nav {
 
       &:hover {
         text-decoration: underline;
+      }
+
+      &.router-link-active {
+        font-weight: bold;
       }
     }
   }
