@@ -40,6 +40,7 @@ const router = createRouter({
       path: '/faculty-and-staff',
       name: 'faculty-and-staff',
       component: FacultyAndStaffLandingPage,
+      redirect: { name: 'new-faculty'},
       /* These are this pages's (route's) child routes (or pages) */
       children: [
         {

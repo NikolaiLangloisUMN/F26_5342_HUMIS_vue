@@ -10,7 +10,7 @@ const props = defineProps({
 <template>
 
   <p class="faculty-contact-card">
-    <span class="name">{{ props.theirInfo.fName }} {{ props.theirInfo.lName }}</span>
+    <span class="name">{{ props.theirInfo.first_name }} {{ props.theirInfo.last_name }}</span>
     <span class="title">{{ props.theirInfo.title }}</span>
     <span class="address">{{ props.theirInfo.address }}</span>
     <a :href="'tel: ' + props.theirInfo.phoneNumber" v-text="props.theirInfo.phoneNumber"/>
