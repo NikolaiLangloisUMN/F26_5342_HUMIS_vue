@@ -1,14 +1,10 @@
 <script setup>
-import facultyAndStaffTogether from "@/data/faculty-and-staff-together-data.js"
-import FacultyContactCard from "@/views/faculty-and-staff/FacultyContactCard.vue";
+import PersonTypeList from "@/views/faculty-and-staff/PersonTypeList.vue";
 </script>
 
 <template>
-  <h5>Faculty listing</h5>
 
-  <faculty-contact-card
-      v-for="facultyMember in facultyAndStaffTogether.filter(item => item.type === 'faculty')"
-      :their-info="facultyMember"/>
+  <person-type-list type="faculty"/>
 
 </template>
 
