@@ -7,6 +7,7 @@ import FacultyAndStaffLandingPage from "@/views/faculty-and-staff/FacultyAndStaf
 import FacultyListing from "@/views/faculty-and-staff/FacultyListing.vue";
 import StaffListing from "@/views/faculty-and-staff/StaffListing.vue";
 import NewFaculty from "@/views/faculty-and-staff/NewFaculty.vue";
+import FacultyDetails from "@/views/faculty-and-staff/FacultyDetails.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -57,6 +58,11 @@ const router = createRouter({
           path: 'staff-listing',
           name: 'staff-listing',
           component: StaffListing,
+        },
+        {
+          path: 'faculty-details/:facultyId',
+          name: 'faculty-details',
+          component: FacultyDetails,
         }
       ],
       meta: {
